@@ -157,8 +157,8 @@ userRouter
   .patch(updateUser)
   .delete(deleteUser);
 
-app.use('api/v1/tours', tourRouter);
-app.use('api/v1/users', userRouter);
+app.use('/api/v1/tours', tourRouter);
+app.use('/api/v1/users', userRouter);
 // 4) START SERVER
 
 const port = 3000;
